@@ -2,7 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ * This is to check if random number is negative, zero or negative
+ */
+
 int main(void)
 {
 	int n;
