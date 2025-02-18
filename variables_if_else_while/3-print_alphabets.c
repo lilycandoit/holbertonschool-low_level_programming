@@ -3,7 +3,8 @@
 /**
  * main - Entry point to print out alphabet
  *
- * Description: Uses a loop to print all lowercase and uppercase letters from a to z
+ * Description: Uses a loop to print all lowercase 
+ * and uppercase letters from a to z
  * using only the putchar function three times.
  *
  * Return: Always 0 (Success)
