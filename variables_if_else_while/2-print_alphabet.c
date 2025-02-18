@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * Main entry - always return 0 
+ * Main entry
  *
  * Print out alphabet by using loop
  *
@@ -11,7 +11,7 @@ int main(void)
 {
 	char c;
 
-	for (c='a'; c <='z'; c++)
+	for (c = 'a'; c <= 'z'; c++)
 		putchar(c);
 
 	putchar('\n');
