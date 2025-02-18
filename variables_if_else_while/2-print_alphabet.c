@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /**
- * Main entry
+ * main: Entry point
+ *
+ * Return: Always 0 (Success)
  *
  * Print out alphabet by using loop
  *
