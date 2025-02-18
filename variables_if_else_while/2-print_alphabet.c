@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main: Entry point to print out alphabet letter
+ * main - Entry point to print out alphabet letter
  *
  * Description: Uses a loop to print all lowercase letters from a to z
  * using only the putchar function twice.
