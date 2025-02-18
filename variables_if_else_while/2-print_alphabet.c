@@ -3,9 +3,10 @@
 /**
  * main: Entry point to print out alphabet letter
  *
- * Return: Always 0 (Success)
+ * Description: Uses a loop to print all lowercase letters from a to z
+ * using only the putchar function twice.
  *
- * Print out alphabet by using loop
+ * Return: Always 0 (Success)
  *
  */
 
