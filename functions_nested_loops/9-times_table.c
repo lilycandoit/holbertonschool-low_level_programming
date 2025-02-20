@@ -12,6 +12,7 @@
 void times_table(void)
 {
 	int row, col, product;
+
 	row = 0;
 
 	while (row < 10)
