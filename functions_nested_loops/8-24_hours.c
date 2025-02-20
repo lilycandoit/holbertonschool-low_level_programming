@@ -3,7 +3,6 @@
 /**
  * jack_bauer - prints the every minute of the day
  *
- * @n: The number to check
  * Description: print every minute of the day
  *
  * Return: void
