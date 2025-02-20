@@ -9,6 +9,19 @@
  *
  */
 
+/* Print alphabet one time */
+void print_alphabet(void)
+{
+	char c = 'a';
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
+	}
+	_putchar('\n');
+}
+
+/* Reuse the function to print 10 times */	
 void print_alphabet_x10(void)
 {
 	int i = 0;
@@ -17,6 +30,4 @@ void print_alphabet_x10(void)
 		print_alphabet();
 		i++;
 	}
-
-	_putchar('\n');
 }
