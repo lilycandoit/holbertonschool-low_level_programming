@@ -1,5 +1,9 @@
 #include "main.h"
 
+/* Declare formating function */
+void format_table(int product);
+
+
 /**
  * times_table - to print the n times table
  * @n: the number of rows and collums
@@ -31,24 +35,7 @@ void print_times_table(int n)
 			_putchar(' ');
 
 
-			if (product < 10)
-			{
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(product + '0');
-			}
-			else if (product < 100)
-			{
-				_putchar(' ');
-				_putchar((product / 10) + '0');
-				_putchar((product % 10) + '0');
-			}
-			else
-			{
-				_putchar((product / 100) + '0');
-				_putchar(((product / 10) % 10) + '0');
-				_putchar((product % 10) + '0');
-			}
+			format_table(product);	
 
 			col++;
 		}
@@ -57,4 +44,32 @@ void print_times_table(int n)
 		row++;
 	}
 
+}
+
+/**
+ * format_table - Format and prints numbers with proper spacing
+ * @product: The number to format and print
+ * Return: void
+ */
+
+void format_table(int product)
+{
+	if (product < 10)
+	{
+		_putchar(' ');
+		_putchar(' ');
+		_putchar(product + '0');
+	}
+	else if (product < 100)
+	{
+		_putchar(' ');
+		_putchar((product / 10) + '0');
+		_putchar((product % 10) + '0');
+	}
+	else
+	{
+		_putchar((product / 100) + '0');
+		_putchar(((product / 10) % 10) + '0');
+		_putchar((product % 10) + '0');
+	}
 }
