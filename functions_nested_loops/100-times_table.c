@@ -24,7 +24,7 @@ void print_times_table(int n)
 		_putchar('0');
 
 		col = 1;
-		while (col < n)
+		while (col <= n)
 		{
 			product = row * col;
 			_putchar(',');
