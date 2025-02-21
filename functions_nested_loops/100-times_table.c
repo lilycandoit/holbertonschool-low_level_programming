@@ -5,7 +5,7 @@ void format_table(int product);
 
 
 /**
- * times_table - to print the n times table
+ * print_times_table - to print the n times table
  * @n: the number of rows and collums
  *
  * Description: to print the n times table
@@ -49,6 +49,7 @@ void print_times_table(int n)
 /**
  * format_table - Format and prints numbers with proper spacing
  * @product: The number to format and print
+ * Description: Format the number with proper spacing
  * Return: void
  */
 
