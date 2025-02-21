@@ -35,7 +35,7 @@ void print_times_table(int n)
 			_putchar(' ');
 
 
-			format_table(product);	
+			format_table(product);
 
 			col++;
 		}
