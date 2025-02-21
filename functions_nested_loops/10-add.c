@@ -2,10 +2,10 @@
 
 /**
  * add - add 2 integers
+ * @a: first integer parameter
+ * @b: second integer parameter
  *
- * @a,@b: params to count the sum
- *
- * Description: count 2 params in the argument
+ * Description: takes two integers as input and returns their sum
  *
  * Return: result of 2 int params
  *
