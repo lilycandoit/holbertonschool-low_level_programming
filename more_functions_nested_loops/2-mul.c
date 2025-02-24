@@ -6,12 +6,12 @@
  * @a: First integer
  * @b: Second integer
  *
- * Description: get result of multiplying 2 integers
+ * Description: Get result of multiplying 2 integers
  *
- * return: result of multiplying a and b
+ * return: Return result of multiplying a and b
  */
 
 int mul(int a, int b)
 {
-	return (a*b);
+	return (a * b);
 }
