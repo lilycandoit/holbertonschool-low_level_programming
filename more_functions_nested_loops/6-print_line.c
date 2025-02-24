@@ -2,7 +2,7 @@
 
 /**
  * print_line - to print line with '_'
- * 
+ *
  * @n: The number of '_'
  *
  * Return: void
