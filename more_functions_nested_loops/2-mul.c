@@ -8,7 +8,7 @@
  *
  * Description: Get result of multiplying 2 integers
  *
- * return: Return result of multiplying a and b
+ * Return: Return result of multiplying a and b
  */
 
 int mul(int a, int b)
