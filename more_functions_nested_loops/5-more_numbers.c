@@ -15,7 +15,7 @@ void print_numbers(void)
 
 	for (i = 0; i <= 14; i++)
 	{
-		if ( 1 >= 10)
+		if (i >= 10)
 			_putchar('1');
 
 		_putchar((i % 10) + '0');
