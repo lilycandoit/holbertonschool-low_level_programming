@@ -5,6 +5,8 @@
  *
  * @c: Character to check
  *
+ * Description: Check if the character is uppercase
+ *
  * Return: Return 1 if uppercase or 0 otherwise
  */
 
