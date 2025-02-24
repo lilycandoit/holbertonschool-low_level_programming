@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- *
  * print_numbers - print numbers from 1 to 14
  *
  * Description: To print numbers from 1 to 14
@@ -9,6 +8,7 @@
  * Return: void
  *
  */
+
 void print_numbers(void)
 {
 	int i;
