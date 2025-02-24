@@ -1,15 +1,13 @@
 #include "stdio.h"
 
 /**
- * fizz_buzz - to print number with Fizz and Buzz
- *
- * @n: The number to be printed
+ * main - to print number with Fizz and Buzz
  *
  * Return: void
  *
  */
 
-void fizz_buzz(void)
+void main(void)
 {
 	int n = 1;
 
