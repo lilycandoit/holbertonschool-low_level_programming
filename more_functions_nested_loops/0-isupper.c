@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _issupper - check if chatacter is uppercase
+ * _isupper - check if chatacter is uppercase
  *
  * @c: Character to check
  *
