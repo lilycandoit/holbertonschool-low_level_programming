@@ -14,7 +14,9 @@ void rev_string(char *s)
 	int i;
 	char temp;
 
-	length = _strlen(s);
+	length = 0;
+	while (s[length] != '\0')
+		length++;
 
 	/*Swap characters and moving forwards to middle */
 	i = 0;
@@ -28,9 +30,4 @@ void rev_string(char *s)
 		i++;
 	}
 
-	/* Print reversed string */
-	for (i = 0; i < length; i++)
-		_putchar(s[i]);
-
-	_putchar('\n');
 }
