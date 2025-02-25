@@ -8,6 +8,8 @@
  * Return: void
  */
 
+int _strlen(char *s);
+
 void print_rev(char *s)
 {
 	int length = _strlen(s);
