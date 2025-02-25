@@ -8,11 +8,15 @@
  * Return: void
  */
 
-int _strlen(char *s);
 
 void print_rev(char *s)
 {
-	int length = _strlen(s);
+	int length = 0;
+
+	while (s[length] != '\0')
+	{
+		length++;
+	}
 
 	int i = length - 1;
 
