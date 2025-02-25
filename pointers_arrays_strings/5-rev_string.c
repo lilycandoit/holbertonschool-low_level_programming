@@ -21,7 +21,7 @@ void rev_string(char *s)
 	/*Swap characters and moving forwards to middle */
 	i = 0;
 
-	while (i < length /2)
+	while (i < length / 2)
 	{
 		temp = s[i];
 		s[i] = s[length - i - 1];
