@@ -15,7 +15,7 @@ char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
 
-	/* 
+	/*
 	 * This way is copying directly, copy first,
 	 * then check condition if it reach the ends
 	 */
