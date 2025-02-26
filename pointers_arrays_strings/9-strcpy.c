@@ -18,13 +18,15 @@ char *_strcpy(char *dest, char *src)
 	/* Check if dest or src is NULL (avoid segmentation fault) */
 	if (src == NULL || dest == NULL)
 	{
-        	printf("Error: NULL pointer detected!\n");
-        	return NULL;
+		printf("Error: NULL pointer detected!\n");
+		return (NULL);
     	}
 
-	/* This way is copying directly, copy first, then check condition if it reach the ends */
+	/** This way is copying directly, copy first,
+	 * then check condition if it reach the ends
+	 */
 	while ((dest[i] = src[i]) != '\0')
 		i++;
 
-	return dest;
+	return (dest);
 }
