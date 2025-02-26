@@ -23,7 +23,7 @@ char *_strcpy(char *dest, char *src)
     	}
 
 	/* This way is copying directly, copy first, then check condition if it reach the ends */
-	while ((src[i] = dest[i]) != '\0')
+	while ((dest[i] = src[i]) != '\0')
 		i++;
 
 	return dest;
