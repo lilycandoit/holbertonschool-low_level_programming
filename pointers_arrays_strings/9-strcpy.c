@@ -1,4 +1,6 @@
 # include "main.h"
+# include "stdio.h"
+# include "stddef.h"
 
 /**
  * _strcpy - copy array one to array b
@@ -13,8 +15,8 @@ char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
 
-	// Check if dest or src is NULL (avoid segmentation fault)
-	if (src == NULL || dest == NULL) 
+	/* Check if dest or src is NULL (avoid segmentation fault) */
+	if (src == NULL || dest == NULL)
 	{
         	printf("Error: NULL pointer detected!\n");
         	return NULL;
