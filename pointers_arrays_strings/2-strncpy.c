@@ -12,24 +12,24 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-    int i = 0;
+	int i = 0;
 
-    /* Copy characters from src to dest */
-    while (i < n && src[i] != '\0')
-    {
-        dest[i] = src[i];
-        i++;
-    }
+	/* Copy characters from src to dest */
+	while (i < n && src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
 
-    /* in case characters in src < n */
-    while (i < n)
-    {
-        dest[i] = '\0';
-        i++;
-    }
+	/* in case characters in src < n */
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
 
 
 
-    return (dest);
+	return (dest);
 }
 
