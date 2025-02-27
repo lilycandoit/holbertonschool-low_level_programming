@@ -11,23 +11,23 @@
 
 char *_strcat(char *dest, char *src)
 {
-  char *ptr = dest; /* save the start of dest */
+        char *ptr = dest; /* save the start of dest */
 
-  /* Find the end of dest string */
-  while (*ptr != '\0')
-    ptr++;
+        /* Find the end of dest string */
+        while (*ptr != '\0')
+                ptr++;
 
-  /* Copy src and add to dest */
-  while (*src != '\0')
-  {
-    /* ptr now is starting from the end of the original dest */
-    *ptr = *src;
-    ptr++;
-    src++;
-  }
+        /* Copy src and add to dest */
+        while (*src != '\0')
+        {
+                /* ptr now is starting from the end of the original dest */
+                *ptr = *src;
+                ptr++;
+                src++;
+        }
 
-  /* after all, add null terminator */
-  *ptr = '\0';
+        /* after all, add null terminator */
+        *ptr = '\0';
 
-  return dest;
+        return (dest);
 }
