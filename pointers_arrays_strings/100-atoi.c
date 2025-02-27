@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 
 /**
 * _atoi - to convert a string into integer
@@ -33,7 +34,16 @@ int _atoi(char *s)
     else if (*s >= '0' && *s <= '9')
     {
       found_number = 1; /* number is found now - will be used for next step */
-      result = (result * 10) + (*s - '0'); /* convert character to digit, result will be acculmulated for next character */
+
+      /* prevent overflow with min and max integer */
+      if (result > (INT_MAX / 10) ||
+               (result == INT_MAX / 10 && (*s - '0') > (INT_MAX % 10)))
+            {
+                return (sign == 1) ? INT_MAX : INT_MIN;
+            }
+
+      /* convert character to digit, result will be acculmulated for next character */
+      result = (result * 10) + (*s - '0');
     }
     else if (found_number)
     {
