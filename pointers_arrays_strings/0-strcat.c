@@ -2,10 +2,10 @@
 
 /**
 * _strcat - to concatenate two strings
-
+*
 * @dest: the destination string with enough memory
 * @src: the string will be added to dest
-
+*
 * Return: the pointer to the dest string
 */
 
