@@ -38,13 +38,13 @@ int _atoi(char *s)
 			if (result > (INT_MAX / 10) ||
 					(result == INT_MAX / 10 && (*s - '0') > (INT_MAX % 10)))
 			{
-				return (sign == 1) ? (INT_MAX) : (INT_MIN);
+				return ((sign == 1) ? INT_MAX : INT_MIN);
 			}
 
 			/*
 			 * convert character to digit,
 			 * result will be acculmulated for next character
-			 * */
+			 */
 			result = (result * 10) + (*s - '0');
 		}
 		else if (found_number)
