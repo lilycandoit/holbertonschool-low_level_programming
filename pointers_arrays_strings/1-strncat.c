@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 
 /**
 * _strncat - to concatenate 2 strings with max n characters
@@ -13,7 +12,7 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	size_t dest_len = 0, i;
+	int dest_len = 0, i;
 
 	/* find the length of dest*/
 	while (dest[dest_len] != '\0')
