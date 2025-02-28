@@ -5,7 +5,7 @@
 *
 * @str: the string to be encoded
 *
-* Description: not using more than 2 if, switch, tenary opperator
+* Description: not using more than 2 if, tenary opperator
 * using mapping instead with 2 arrays (letters - numbers)
 * then loop through the string and map the corresponding value
 *
