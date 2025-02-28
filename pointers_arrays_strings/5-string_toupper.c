@@ -3,6 +3,8 @@
 /**
 * string_toupper - to change all lowercase letters to uppercase
 *
+* @a: the string to be uppercased
+*
 * Return: a string with all uppercase
 */
 
