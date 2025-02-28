@@ -20,7 +20,7 @@ char *leet(char *str)
 
 	while (str[i] != '\0')
 	{
-		int replaced = 0 /* false */
+		int replaced = 0; /* false */
 		/* put it inside while loop to reset value for each character */
 
 		for (j=0; letters[j] != '\0' && !replaced; j++)
