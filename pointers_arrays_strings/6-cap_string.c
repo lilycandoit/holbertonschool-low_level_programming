@@ -39,7 +39,8 @@ char *cap_string(char *str)
 			str[i] = str[i] - 32; /* convert to uppercase */
 			is_start = 0; /* reset flag after capitalizing */
 		}
-		else {
+		else
+		{
 			is_start = 0;
 		}
 
