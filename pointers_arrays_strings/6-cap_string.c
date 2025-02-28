@@ -15,12 +15,12 @@ char *cap_string(char *str)
 {
 	int i = 0, j;
 	char separators[] = " \t\n,;.!?\"(){}";
-    	int is_start = 1; /* flag to check if it is at start of word */
+	int is_start = 1; /* flag to check if it is at start of word */
 
 	while (str[i] != '\0')
 	{
 		/* check if the current character is a separator */
-			int is_separator = 0;
+		int is_separator = 0;
 		for (j = 0; separators[j] != '\0'; j++)
 		{
 			if (str[i] == separators[j])
