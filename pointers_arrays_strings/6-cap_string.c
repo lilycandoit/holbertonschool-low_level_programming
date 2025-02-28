@@ -21,6 +21,7 @@ char *cap_string(char *str)
 	{
 		/* check if the current character is a separator */
 		int is_separator = 0;
+		
 		for (j = 0; separators[j] != '\0'; j++)
 		{
 			if (str[i] == separators[j])
