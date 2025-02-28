@@ -16,7 +16,7 @@ int _strcmp(char *s1, char *s2)
 
 	while (s1[i] != '\0' && s2[i] != '\0')
 	{
-		if(s1[i] != s2[i])
+		if (s1[i] != s2[i])
 		{
 			/* return ASCII diference of the 1st unmatched character */
 			return (s1[i] - s2[i]);
@@ -25,7 +25,9 @@ int _strcmp(char *s1, char *s2)
 		i++;
 	}
 
-	return (s1[i] - s2[i]); /* in case 2 strings have different lengths or both null */
+	return (s1[i] - s2[i]);
+	/* in case 2 strings have different lengths */
+	/* or both null */
 }
 
 
