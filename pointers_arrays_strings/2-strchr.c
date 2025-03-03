@@ -27,7 +27,7 @@ char *_strchr(char *s, char c)
 	/* in case the searching char is null terminator */
 	/* and the loop already run through the string */
 	if (c == '\0')
-		return s; /* return the pointer to '\0' */
+		return (s); /* return the pointer to '\0' */
 
 	return (NULL); /* if c is NOT FOUND */
 }
