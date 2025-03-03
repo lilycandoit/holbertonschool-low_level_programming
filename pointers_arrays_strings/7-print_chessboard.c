@@ -13,7 +13,7 @@ void print_chessboard(char (*a)[8])
 	int i = 0; /*row */
 	int j;
 
-	while (*a[i] != '\0')
+	while (i < 8)
 	{
 		j = 0;
 		while (j < 8)
