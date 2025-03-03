@@ -18,7 +18,7 @@ char *_strstr(char *haystack, char *needle)
 
 	/* in case needle is empty, return haystack */
 	if (*needle == '\0')
-		return haystack; /* return the full haystack from beginning */
+		return (haystack); /* return the full haystack from beginning */
 
 	while (*haystack)
 	{
@@ -34,7 +34,7 @@ char *_strstr(char *haystack, char *needle)
 		}
 
 		if (*n == '\0') /* the match is found only when reaching the end of needle*/
-			return haystack;
+			return (haystack);
 
 		haystack++;
 	}
