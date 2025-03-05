@@ -17,5 +17,5 @@ void _puts_recursion(char *s)
 
 	_putchar(*s); /* print the current character */
 	/* s+1 is similar to s++ without modifying the s */
-	_puts_recursion(s+1);
+	_puts_recursion(s + 1);
 }
