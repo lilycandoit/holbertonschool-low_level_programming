@@ -21,5 +21,5 @@ int _pow_recursion(int x, int y)
 
 	/* recursive case: x^y = x * x6(y-1) */
 	/* and keep going untill y = 0 */
-	return (x * _pow_recursion(x, y-1));
+	return (x * _pow_recursion(x, y - 1));
 }
