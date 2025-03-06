@@ -13,7 +13,7 @@ int check_sqrt(int n, int x);
 int _sqrt_recursion(int n)
 {
 	/* check edge case of negative input */
-	if ( n < 0)
+	if (n < 0)
 		return (-1);
 
 	/* calling the recurse function from the helper */
@@ -32,8 +32,8 @@ int check_sqrt(int n, int x)
 		return (-1); /* no square root found */
 
 	if (x * x == n)
-		return x; /* found the square root */
+		return (x); /* found the square root */
 
 	/* incase x * x < n, keep trying the next number */
-	return check_sqrt(n, x + 1);
+	return (check_sqrt(n, x + 1));
 }
