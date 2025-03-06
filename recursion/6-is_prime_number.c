@@ -21,7 +21,7 @@ int is_prime_number(int n)
 		return (1);
 
 	/* if not base case, return value of the helper function */
-	return check_prime(n, 2);
+	return (check_prime(n, 2));
 }
 
 /**
@@ -43,6 +43,6 @@ int check_prime(int n, int i)
 
 	/* if none of the cases above, then keep calling function */
 	/* to check with (i + 1) */
-	return check_prime(n, i + 1);
+	return (check_prime(n, i + 1));
 }
 
