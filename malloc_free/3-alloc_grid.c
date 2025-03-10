@@ -21,6 +21,7 @@ int **alloc_grid(int width, int height)
 
 	/* allocate memory for the row pointers */
 	grid = malloc(height * sizeof(int *));
+	
 	if (grid == NULL)
 		return (NULL);
 
@@ -37,7 +38,8 @@ int **alloc_grid(int width, int height)
 				i--;
 				free(grid[i]);
 			}
-			/* free(grid) */
+
+			free(grid)
 			/* free the row pointer itself */
 			return (NULL);
 		}
