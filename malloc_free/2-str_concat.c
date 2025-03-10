@@ -1,7 +1,12 @@
 #include "main.h"
 #include "stdlib.h"
 
-/* check the length of a string */
+/**
+ * _strlen - check the length of a string
+ * @s: the string to be checked
+ *
+ * Return: the length of a string in int
+ */
 unsigned int _strlen(char *s)
 {
 	unsigned int len = 0;
