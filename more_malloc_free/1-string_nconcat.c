@@ -3,7 +3,7 @@
 
 /**
 * _strlen - to get the len of a string
-@s: the string to be checked
+* @s: the string to be checked
 * Return: the length in int
 */
 
