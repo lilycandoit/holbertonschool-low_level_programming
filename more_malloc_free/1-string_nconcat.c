@@ -42,7 +42,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len_s2 = _strlen(s2);
 
 	/* use full length of s2 if n is greater than length of s2*/
-	if ( n >= len_s2)
+	if (n >= len_s2)
 	{
 		n = len_s2;
 	}
@@ -65,7 +65,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	/* then copy n characters from s2 */
 	j = 0;
-	while(s2 != NULL && j < n)
+	while (s2 != NULL && j < n)
 	{
 		nconcat_ptr[i + j] = s2[j];
 		j++;
