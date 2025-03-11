@@ -1,57 +1,101 @@
-#include "stdlib.h"
-#include "stdio.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 /**
- * _isdigit - Checks if a string contains only digits
- * @s: The string to check
- *
- * Return: 1 if string contains only digits, 0 otherwise
- */
-int _isdigit(char *s)
+* is_digit - Checks if a string contains only digits
+* @s: The string to check
+* Return: 1 if only digits, 0 otherwise
+*/
+
+int is_digit(char *s)
 {
 	while (*s)
 	{
-		if(*s < '0' || *s > '9')
-			return (0); /* not a digit */
+		if (*s < '0' || *s > '9')
+			return (0); /* not digit and end loop*/
+
 		s++;
 	}
-	return (1); /* all characters are digit */
+	return (1); /* true - all are digits */
 }
 
 /**
-* error_exit - print error message and exit
+* main - Multiplies two positive numbers given as arguments
+* @argc: Argument count
+* @argv: Argument vector (input strings for numbers)
+* Return: 0 on success, 98 on error
 */
-void error_exit(void)
-{
-	printf("Error\n");
-	exit(98);
-}
 
-/**
- * main - Entry point for multiplication program
- * @argc: Argument count
- * @argv: Argument vector
- *
- * Return: 0 on success, 98 on error
- */
 int main(int argc, char *argv[])
 {
-	int num1, num2, result;
+	int len1, len2, i, j;
+	int *result; /* array to store intermidiate results */
 
-	/* check if provide exact 2 arguments */
-	if (argc != 3)
-		error_exit();
+	/* check invalid inputs */
+	if (argc != 3 || !is_digit(argv[1]) || !is_digit(argv[2]))
+	{
+		printf("Error\n");
+		exit(98);
+	}
 
-	/* check if contain only digits */
-	if (!_isdigit(argv[1]) || !_isdigit(argv[2]))
-		error_exit();
+	/* get length of both inputs */
+	len1 = strlen(argv[1]);
+	len2 = strlen(argv[2]);
 
-	/* convert string into integer and multiply */
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
-	result = num1 * num2;
+	/* allocate memory for result array */
+	/* max-length = sum of input lengths */
+	/* and should use calloc to initialize result = 0 */
+	result = calloc(len1 + len2, sizeof(int));
 
-	printf("Result: %d\n", result);
+	if (result == NULL)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+
+	/* do manual multiplication - like gradeschool */
+	for (i = len1 - 1; i >=0; i--) /* loop through 1st input */
+	{
+		for (j = len2 -1; j >= 0; j--) /* loop through 2nd input*/
+		{
+			/* convert characters into integers */
+			int mul = (argv[1][i] - '0') * (argv[2][j] - '0');
+
+			/* add mul to the current position */
+			int sum = mul + result[i + j + 1];
+
+			/* store the last digit */
+			result[i + j + 1] = sum % 10;
+
+			/* store the carry-over for next index */
+			result[i+j] += sum / 10;
+		}
+	}
+	/* print the result - skip leading Zeros */
+	i = 0;
+	while (i < (len1 + len2) && result[i] == 0) /* skip all leading 0 */
+		i++;
+
+	/* edge case: if all the digits are zero, print a single 0 */
+	if (i == len1 + len2)
+	{
+		printf("0\n");
+		free(result);
+		return(0);
+	}
+
+	/*/ print actual mul result */
+	while (i < (len1 + len2))
+	{
+		printf("%d", result[i]);
+		i++;
+	}
+
+	printf("\n");
+
+	/* free allocated memory */
+	free(result);
 
 	return (0);
 }
