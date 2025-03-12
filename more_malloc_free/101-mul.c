@@ -30,7 +30,7 @@ int is_digit(char *s)
 int main(int argc, char *argv[])
 {
 	int len1, len2, i, j;
-	int *result; /* array to store intermidiate results */
+	int *result = NULL; /* array to store intermidiate results */
 
 	/* check invalid inputs */
 	if (argc != 3 || !is_digit(argv[1]) || !is_digit(argv[2]))
