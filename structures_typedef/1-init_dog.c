@@ -5,8 +5,9 @@
 * init_dog - to initialize a variable with struct dog
 * @d: variable name
 * @name: first child element
-* @float: 2nd child element
+* @age: 2nd child element
 * @owner: 3rd child element
+* Return: void
 */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
@@ -16,7 +17,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 		return;
 	}
 
-	d -> name = name;
-	d -> age = age;
-	d -> owner = owner;
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 }
