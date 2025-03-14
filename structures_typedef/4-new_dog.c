@@ -23,23 +23,22 @@ char *_strcpy(char *dest, char *src)
 }
 
 /**
- * _strlen - to get the length of a string
- *
- * @s: The string
- *
- * Return: The length of the string (int)
- */
- int _strlen(char *s)
- {
-	 int i = 0;
+* _strlen - to get the length of a string
+*
+* @s: The string
+*
+* Return: The length of the string (int)
+*/
+int _strlen(char *s)
+{
+	int i = 0;
 
-	 while (s[i] != '\0')
-	 {
-		 i++;
-	 }
-
-	 return (i);
- }
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
 
 /**
 * new_dog - to create a new dog function
@@ -90,3 +89,4 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	return (new_dog);
 }
+
