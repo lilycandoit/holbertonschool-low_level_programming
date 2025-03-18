@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int num1, num2, result;
-	int (*operation) (int, int);
+	int (*operation)(int, int);
 
 	/* check if number of arguments is wrong */
 	if (argc != 4)
