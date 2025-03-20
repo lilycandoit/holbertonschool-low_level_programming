@@ -6,6 +6,7 @@
 
 /**
 * get_type - function to get correct function pointer
+* @c: single character to be checked 
 * Return: void
 */
 void (*get_type(char c))(va_list)
