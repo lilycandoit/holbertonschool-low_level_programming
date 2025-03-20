@@ -4,7 +4,10 @@
 #include "variadic_functions.h"
 #include "3-format_types.c"
 
-/* function to get correct function pointer */
+/**
+* get_type - function to get correct function pointer
+* Return: void
+*/
 void (*get_type(char c))(va_list)
 {
 	ft all_types[] = {
