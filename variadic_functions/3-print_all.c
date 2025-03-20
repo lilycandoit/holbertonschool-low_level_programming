@@ -6,7 +6,7 @@
 
 /**
 * get_type - function to get correct function pointer
-* @c: single character to be checked 
+* @c: single character to be checked
 * Return: void
 */
 void (*get_type(char c))(va_list)
@@ -66,4 +66,5 @@ void print_all(const char * const format,  ...)
 	va_end(args);  /* Clean up the va_list */
 
 }
+
 
