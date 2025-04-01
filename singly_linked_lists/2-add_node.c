@@ -4,6 +4,26 @@
 #include "string.h"
 
 /**
+* _strlen - to get the length of a string
+* @str: the string to be checked
+* Return: the length of the string
+*/
+int _strlen(const char *str)
+{
+	int len = 0;
+
+	while (*str)
+	{
+		len++;
+		str++;
+	}
+
+	return (len);
+}
+
+
+
+/**
 * add_node - add a new node at the beginning of a linked list
 * @head: the head of the linked list
 * @str: the string to be added at the beginning
@@ -30,7 +50,7 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	new_node->len = strlen(str);
+	new_node->len = _strlen(str);
 	new_node->next = *head;
 	*head = new_node;
 
