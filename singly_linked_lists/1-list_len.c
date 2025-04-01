@@ -4,6 +4,7 @@
 /**
 * print_list - to count all elements
 * @h: the pointer to head of the linked list
+* Desciption: get the number of elements/ nodes in the linked list
 * Return: the number of nodes (elements)
 */
 size_t list_len(const list_t *h)
