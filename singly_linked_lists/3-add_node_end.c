@@ -21,8 +21,6 @@ int _strlen(const char *str)
 	return (len);
 }
 
-
-
 /**
 * add_node_end - add a new node at the end of a linked list
 * @head: the head of the linked list
@@ -45,13 +43,11 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 
 	new_node->str = strdup(str);
-
 	if (new_node->str == NULL)
 	{
 		free(new_node);
 		return (NULL);
 	}
-
 	new_node->len = _strlen(str);
 	new_node->next = NULL; /* new node is the last node */
 
@@ -61,7 +57,6 @@ list_t *add_node_end(list_t **head, const char *str)
 		*head = new_node;
 		return (new_node);
 	}
-
 	/* in case head is there (not empty list) */
 	temp = *head;
 	/* traverse through nodes of the list */
@@ -70,9 +65,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		temp = temp->next;
 		/* increase step, move to the next node*/
 	}
-
 	temp->next = new_node;
 	/* pointer of last node points to new_node makeing it the end */
-
 	return (new_node);
 }
