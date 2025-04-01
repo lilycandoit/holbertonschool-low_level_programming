@@ -2,11 +2,9 @@
 #include "stdio.h"
 
 /**
-* print_list - to count all elements
+* list_len - to count all elements
 * @h: the pointer to head of the linked list
 * Return: the number of nodes (elements)
-*
-* Desciption: get the number of elements/ nodes in the linked list
 */
 size_t list_len(const list_t *h)
 {
