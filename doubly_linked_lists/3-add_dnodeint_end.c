@@ -37,8 +37,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	while (temp->next != NULL)
 	{
 		temp = temp->next;
-		/* increase step, move to
-		 the next node*/
+		/* increase step, move to the next node*/
 	}
 	temp->next = new_node;
 	/* link the last node to new_node */
