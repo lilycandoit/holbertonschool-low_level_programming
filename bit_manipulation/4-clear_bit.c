@@ -23,7 +23,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	/* move number 1 to the left index spaces */
 
 	/* flip the bits first, then use AND operator */
-    *n = *n & (~mask); /* ~ has higher order than & */
+	*n = *n & (~mask); /* ~ has higher order than & */
 
 	return (1);
 }
