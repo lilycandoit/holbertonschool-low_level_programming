@@ -15,11 +15,12 @@ void close_file(int fd);
 int main(int argc, char *argv[])
 {
 
-    	int fd_from = open_file_from(argv[1]);
-    	int fd_to = open_file_to(argv[2]);    
-    
-    	check_args(argc);
-    
+    	int fd_from, fd_to;
+
+	check_args(argc);
+	       
+	fd_from = open_file_from(argv[1]);
+    	fd_to = open_file_to(argv[2]);    
 
     	copy_content(fd_from, fd_to, argv[1], argv[2]);
 
