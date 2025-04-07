@@ -77,6 +77,20 @@ void copy_content(int fd_from, const char *file_from, const char *file_to)
     /* only open the destionation file if reading worked */
     fd_to = open_file_to(file_to);
 
+    /*  Write the first read chunk */
+    total_written = 0;
+    while (total_written < bytes_read)
+    {
+	    bytes_written = write(fd_to, buffer + total_written, bytes_read - total_written);
+	    if (bytes_written == -1)
+	    {
+            	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
+            	exit(99);
+	    }
+	    total_written += bytes_written;
+    }
+
+    /* Continue with the rest of the file */
     while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
     {
         total_written = 0;
